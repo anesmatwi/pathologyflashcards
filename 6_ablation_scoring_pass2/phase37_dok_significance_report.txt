@@ -1,0 +1,52 @@
+=========================================================
+   CALIBRATED DOK MATCH & STATISTICAL SIGNIFICANCE 
+=========================================================
+
+--- 1. OVERALL DOK MATCH RATE (%) BY TIER ---
+>> TARGET TIER: FOUNDATIONAL (Expected: Level 1)
+Baseline (Closed-Book)              :  77.6% ±  7.1  (SD:   5.7)
+Baseline (Open-Book Optimal)        :  29.2% ±  5.1  (SD:   4.1)
+Phase 37 SFT (Closed-Book)          :  83.6% ±  6.2  (SD:   5.0)
+Phase 37 SFT (Open-Book Optimal)    :  79.2% ±  6.7  (SD:   5.4)
+
+>> TARGET TIER: INTERMEDIATE (Expected: Level 2)
+Baseline (Closed-Book)              :  85.6% ±  6.7  (SD:   5.4)
+Baseline (Open-Book Optimal)        :  84.4% ±  3.2  (SD:   2.6)
+Phase 37 SFT (Closed-Book)          :  86.8% ±  2.8  (SD:   2.3)
+Phase 37 SFT (Open-Book Optimal)    :  84.8% ±  5.7  (SD:   4.6)
+
+>> TARGET TIER: ADVANCED (Expected: Level 3)
+Baseline (Closed-Book)              :  45.6% ±  4.1  (SD:   3.3)
+Baseline (Open-Book Optimal)        :  26.0% ±  3.0  (SD:   2.4)
+Phase 37 SFT (Closed-Book)          :  91.2% ±  2.8  (SD:   2.3)
+Phase 37 SFT (Open-Book Optimal)    :  88.0% ±  5.3  (SD:   4.2)
+
+=========================================================
+   STATISTICAL SIGNIFICANCE REPORT (WILCOXON P-VALUES) 
+=========================================================
+* Significance Levels: (*) p < 0.05 | (**) p < 0.01 | (***) p < 0.001 | (ns) Not Significant
+
+📊 COMPARISON: SFT (Closed) vs Baseline (Closed)
+------------------------------------------------------------
+  • Overall DOK Match Rate (All Tiers) : p = 0.0000 (***)
+  • Target Advanced: Hit Level 3       : p = 0.0000 (***)
+  • Target Foundational: Hit Level 1   : p = 0.0469 (*)
+
+📊 COMPARISON: SFT (Open) vs Baseline (Open)
+------------------------------------------------------------
+  • Overall DOK Match Rate (All Tiers) : p = 0.0000 (***)
+  • Target Advanced: Hit Level 3       : p = 0.0000 (***)
+  • Target Foundational: Hit Level 1   : p = 0.0000 (***)
+
+📊 COMPARISON: SFT RAG Resilience (SFT Open vs Closed)
+------------------------------------------------------------
+  • Overall DOK Match Rate (All Tiers) : p = 0.0221 (*)
+  • Target Advanced: Hit Level 3       : p = 0.1306 (ns)
+  • Target Foundational: Hit Level 1   : p = 0.1011 (ns)
+
+📊 COMPARISON: Baseline RAG Degradation (Base Open vs Closed)
+------------------------------------------------------------
+  • Overall DOK Match Rate (All Tiers) : p = 0.0000 (***)
+  • Target Advanced: Hit Level 3       : p = 0.0000 (***)
+  • Target Foundational: Hit Level 1   : p = 0.0000 (***)
+

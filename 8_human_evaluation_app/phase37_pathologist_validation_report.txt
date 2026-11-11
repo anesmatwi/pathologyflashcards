@@ -1,0 +1,143 @@
+==========================================================================================
+   PHASE 37: EXPERT PATHOLOGIST PILOT VALIDATION REPORT (N=96 COMPLETED OF 96 CARDS)
+==========================================================================================
+
+--- 1. COHORT-WIDE CLINICAL SAFETY & FACTUALITY CEILING ---
+  • Completed Evaluations           : 96 / 96 cards (eval_id 42 skipped; eval_id 44 missing Scope/Bloom, n=96)
+  • Clinically Unsafe Outputs       : 0/96 (0.0%)
+  • Major Factual Errors (Score 1-2): 0/96 (0.0%)
+  • Severe Mismatch / Dump (Scope 1): 0/96 (0.0%)
+  • WHO Factuality >= 4/5           : 92/96 (95.8%) [5/5: 57 (59.4%) | 4/5: 35 (36.5%) | 3/5: 4 (4.2%)]
+  • Overall Factuality Mean ± SD    : 4.55 ± 0.58 (out of 5.00)
+  • Clinical Safety Breakdown       : Safe: 82/96 (85.4%) | Potentially Misleading: 14/96 (14.6%) | Unsafe: 0.0%
+  • Educational Usefulness Mean ± SD: 3.79 ± 0.69 (out of 5.00)
+  • Cognitive Scope Mean ± SD       : 2.52 ± 0.50 (out of 3.00) [3/3 Perfect: 50/96 (52.1%) | 2/3 Minor: 46/96 (47.9%)]
+
+--- 2. PIPELINE & TIER-STRATIFIED QUALITY METRICS ---
+Pipeline                         | n   | Fact Mean | Fact >=4      | Safe %        | Util Mean | Scope 3/3 Perfect
+------------------------------------------------------------------------------------------------------------------
+Baseline (Closed-Book)           | 24  |      4.67 |  95.8% (23/24) |  87.5% (21/24) |      4.04 |  70.8% (17/24)
+Baseline (Open-Book Optimal)     | 24  |      4.67 | 100.0% (24/24) |  91.7% (22/24) |      3.79 |  41.7% (10/24)
+Phase 37 SFT (Closed-Book)       | 24  |      4.42 |  91.7% (22/24) |  83.3% (20/24) |      3.71 |  45.8% (11/24)
+Phase 37 SFT (Open-Book Optimal) | 24  |      4.46 |  95.8% (23/24) |  79.2% (19/24) |      3.62 |  50.0% (12/24)
+
+>> TARGET TIER: ADVANCED
+------------------------------------------------------------------------------------------------------------------
+Baseline (Closed-Book)           | 8   |      4.88 | 100.0% ( 8/8 ) | 100.0% ( 8/8 ) |      4.25 |  87.5% ( 7/8 )
+Baseline (Open-Book Optimal)     | 8   |      4.88 | 100.0% ( 8/8 ) | 100.0% ( 8/8 ) |      4.12 |  50.0% ( 4/8 )
+Phase 37 SFT (Closed-Book)       | 8   |      4.75 | 100.0% ( 8/8 ) | 100.0% ( 8/8 ) |      4.00 |  75.0% ( 6/8 )
+Phase 37 SFT (Open-Book Optimal) | 8   |      4.88 | 100.0% ( 8/8 ) |  87.5% ( 7/8 ) |      4.00 |  75.0% ( 6/8 )
+
+>> TARGET TIER: INTERMEDIATE
+------------------------------------------------------------------------------------------------------------------
+Baseline (Closed-Book)           | 8   |      4.88 | 100.0% ( 8/8 ) | 100.0% ( 8/8 ) |      4.12 |  62.5% ( 5/8 )
+Baseline (Open-Book Optimal)     | 8   |      4.62 | 100.0% ( 8/8 ) |  87.5% ( 7/8 ) |      3.75 |  50.0% ( 4/8 )
+Phase 37 SFT (Closed-Book)       | 8   |      4.25 |  87.5% ( 7/8 ) |  62.5% ( 5/8 ) |      3.62 |  25.0% ( 2/8 )
+Phase 37 SFT (Open-Book Optimal) | 8   |      4.25 | 100.0% ( 8/8 ) |  75.0% ( 6/8 ) |      3.50 |  25.0% ( 2/8 )
+
+>> TARGET TIER: FOUNDATIONAL
+------------------------------------------------------------------------------------------------------------------
+Baseline (Closed-Book)           | 8   |      4.25 |  87.5% ( 7/8 ) |  62.5% ( 5/8 ) |      3.75 |  62.5% ( 5/8 )
+Baseline (Open-Book Optimal)     | 8   |      4.50 | 100.0% ( 8/8 ) |  87.5% ( 7/8 ) |      3.50 |  25.0% ( 2/8 )
+Phase 37 SFT (Closed-Book)       | 8   |      4.25 |  87.5% ( 7/8 ) |  87.5% ( 7/8 ) |      3.50 |  37.5% ( 3/8 )
+Phase 37 SFT (Open-Book Optimal) | 8   |      4.25 |  87.5% ( 7/8 ) |  75.0% ( 6/8 ) |      3.38 |  50.0% ( 4/8 )
+
+  * Combined SFT Advanced Tier (n=16): Factuality = 4.81/5.00 [>=4/5: 16/16 (100.0%), 5/5: 13/16 (81.2%)], Scope 3/3 = 12/16 (75.0%), Anchored at MS1/Resident Audience = 13/16 (81.2%)
+
+--- 3. PAIRED STATISTICAL SIGNIFICANCE (TWO-SIDED WILCOXON SIGNED-RANK TESTS) ---
+>> COMPARISON: SFT (Open) vs Baseline (Open)
+  • Factual Correctness (1-5)  (n=24):  4.46  vs  4.67  | p = 0.0956 (ns)
+  • Clinical Safety (% Safe)   (n=24):  79.2% vs  91.7% | p = 0.1797 (ns)
+  • Educational Utility (1-5)  (n=24):  3.62  vs  3.79  | p = 0.3173 (ns)
+  • Cognitive Scope (1-3)      (n=24):  2.50  vs  2.42  | p = 0.5637 (ns)
+
+>> COMPARISON: SFT (Closed) vs Baseline (Closed)
+  • Factual Correctness (1-5)  (n=24):  4.42  vs  4.67  | p = 0.1533 (ns)
+  • Clinical Safety (% Safe)   (n=24):  83.3% vs  87.5% | p = 0.7055 (ns)
+  • Educational Utility (1-5)  (n=24):  3.71  vs  4.04  | p = 0.0325 (*)
+  • Cognitive Scope (1-3)      (n=24):  2.46  vs  2.71  | p = 0.0833 (ns)
+
+>> COMPARISON: Baseline (Open) vs Baseline (Closed)
+  • Factual Correctness (1-5)  (n=24):  4.67  vs  4.67  | p = 1.0000 (ns)
+  • Clinical Safety (% Safe)   (n=24):  91.7% vs  87.5% | p = 0.5637 (ns)
+  • Educational Utility (1-5)  (n=24):  3.79  vs  4.04  | p = 0.1573 (ns)
+  • Cognitive Scope (1-3)      (n=24):  2.42  vs  2.71  | p = 0.0707 (ns)
+
+>> COMPARISON: SFT (Open) vs SFT (Closed)
+  • Factual Correctness (1-5)  (n=24):  4.46  vs  4.42  | p = 0.7815 (ns)
+  • Clinical Safety (% Safe)   (n=24):  79.2% vs  83.3% | p = 0.7055 (ns)
+  • Educational Utility (1-5)  (n=24):  3.62  vs  3.71  | p = 0.5637 (ns)
+  • Cognitive Scope (1-3)      (n=24):  2.50  vs  2.46  | p = 0.7055 (ns)
+
+--- 4. POST-HOC MULTI-AXIAL ALIGNMENT WITH REQUESTED TIER (CLASSIFIABLE CARDS, N=89) ---
+Pipeline                         | n   | Dual-Axis Match  | Audience Match   | Bloom Match      | Either-Axis Match
+-------------------------------------------------------------------------------------------------------------------
+Baseline (Closed-Book)           | 23  |  39.1% ( 9/23)   |  43.5% (10/23)   |  47.8% (11/23)   |  52.2% (12/23)
+Baseline (Open-Book Optimal)     | 24  |  12.5% ( 3/24)   |  29.2% ( 7/24)   |  25.0% ( 6/24)   |  41.7% (10/24)
+Phase 37 SFT (Closed-Book)       | 20  |  25.0% ( 5/20)   |  30.0% ( 6/20)   |  30.0% ( 6/20)   |  35.0% ( 7/20)
+Phase 37 SFT (Open-Book Optimal) | 22  |  31.8% ( 7/22)   |  36.4% ( 8/22)   |  50.0% (11/22)   |  54.5% (12/22)
+
+>> OPEN-BOOK RAG TIER-BY-TIER COMPARISON (SFT Open vs Baseline Open, Classifiable Cards):
+  [Target Tier: FOUNDATIONAL]
+    • Baseline (Open-Book Optimal)   (n=8): Bloom Match =  37.5% (3/8) | Aud Match =  50.0% (4/8) | Either =  62.5% (5/8) | Scope 3/3 =  25.0% (2/8)
+    • Phase 37 SFT (Open-Book Optimal) (n=6): Bloom Match =  83.3% (5/6) | Aud Match =  66.7% (4/6) | Either =  83.3% (5/6) | Scope 3/3 =  66.7% (4/6)
+  [Target Tier: INTERMEDIATE]
+    • Baseline (Open-Book Optimal)   (n=8): Bloom Match =  25.0% (2/8) | Aud Match =  37.5% (3/8) | Either =  50.0% (4/8) | Scope 3/3 =  50.0% (4/8)
+    • Phase 37 SFT (Open-Book Optimal) (n=8): Bloom Match =  50.0% (4/8) | Aud Match =  25.0% (2/8) | Either =  50.0% (4/8) | Scope 3/3 =  25.0% (2/8)
+  [Target Tier: ADVANCED]
+    • Baseline (Open-Book Optimal)   (n=8): Bloom Match =  12.5% (1/8) | Aud Match =   0.0% (0/8) | Either =  12.5% (1/8) | Scope 3/3 =  50.0% (4/8)
+    • Phase 37 SFT (Open-Book Optimal) (n=8): Bloom Match =  25.0% (2/8) | Aud Match =  25.0% (2/8) | Either =  37.5% (3/8) | Scope 3/3 =  75.0% (6/8)
+
+--- 5. AUDIENCE-VS.-BLOOM ORTHOGONALITY & COGNITIVE SCOPE ADJUDICATION (N=89) ---
+  • Coupled Ratings (Audience Level == Bloom's Level)   : 67/89 (75.3%)
+  • Orthogonal Ratings (Audience Level != Bloom's Level): 22/89 (24.7%)
+  • Orthogonal Cards Matching tier_true on >=1 Axis     : 17/22 (77.3%)
+  • Orthogonal Cards Rated '3 - Perfectly Scoped'       : 13/22 (59.1%)
+  • Orthogonal Cards Rated '2 - Minor Mismatch'         : 9/22 (40.9%)
+
+  >> Key Orthogonal Exemplars Rated '3 - Perfectly Scoped':
+    • Card 12 | p2_baseline_open   | Topic: Ovarian Cancer Staging       | Req: intermediate -> Assigned Aud: Advanced (Fellow/Oncologist Level) | Assigned Bloom: Tier 1: Foundational (Bloom's 1-2)
+    • Card 21 | p1_baseline_closed | Topic: Pluripotency Markers         | Req: advanced     -> Assigned Aud: Advanced (Fellow/Oncologist Level) | Assigned Bloom: Tier 1: Foundational (Bloom's 1-2)
+    • Card 22 | p4_sft_open        | Topic: Leucine Metabolism           | Req: advanced     -> Assigned Aud: Advanced (Fellow/Oncologist Level) | Assigned Bloom: Tier 1: Foundational (Bloom's 1-2)
+    • Card 23 | p3_sft_closed      | Topic: Oral Submucous Fibrosis      | Req: advanced     -> Assigned Aud: Advanced (Fellow/Oncologist Level) | Assigned Bloom: Tier 1: Foundational (Bloom's 1-2)
+    • Card 26 | p2_baseline_open   | Topic: Ovarian Serous Tumors        | Req: intermediate -> Assigned Aud: Intermediate (Resident Level)      | Assigned Bloom: Tier 3: Advanced (Bloom's 5-6)
+    • Card 28 | p1_baseline_closed | Topic: Glomus Jugulare Tumors       | Req: advanced     -> Assigned Aud: Intermediate (Resident Level)      | Assigned Bloom: Tier 1: Foundational (Bloom's 1-2)
+    • Card 29 | p2_baseline_open   | Topic: Methanol Poisoning           | Req: foundational -> Assigned Aud: Foundational (MS1 Level)           | Assigned Bloom: Tier 3: Advanced (Bloom's 5-6)
+    • Card 30 | p1_baseline_closed | Topic: Targetoid Urticarial Papules | Req: intermediate -> Assigned Aud: Foundational (MS1 Level)           | Assigned Bloom: Tier 3: Advanced (Bloom's 5-6)
+    • Card 31 | p2_baseline_open   | Topic: Glomus Jugulare Tumors       | Req: advanced     -> Assigned Aud: Foundational (MS1 Level)           | Assigned Bloom: Tier 3: Advanced (Bloom's 5-6)
+    • Card 32 | p4_sft_open        | Topic: Pluripotency Markers         | Req: advanced     -> Assigned Aud: Foundational (MS1 Level)           | Assigned Bloom: Tier 3: Advanced (Bloom's 5-6)
+    • Card 43 | p1_baseline_closed | Topic: Calcium Oxalate Calcifications | Req: foundational -> Assigned Aud: Intermediate (Resident Level)      | Assigned Bloom: Tier 1: Foundational (Bloom's 1-2)
+    • Card 60 | p4_sft_open        | Topic: Methanol Poisoning           | Req: foundational -> Assigned Aud: Intermediate (Resident Level)      | Assigned Bloom: Tier 1: Foundational (Bloom's 1-2)
+    • Card 63 | p2_baseline_open   | Topic: Endocrine Tumor Variants     | Req: foundational -> Assigned Aud: Foundational (MS1 Level)           | Assigned Bloom: Tier 3: Advanced (Bloom's 5-6)
+
+--- 6. NEGATIVE CONSTRAINT COMPLIANCE (ANTI-VIGNETTE MANDATE ON N=96 DECK) ---
+  • Baseline (Closed-Book)          : 16/24 ( 66.7%) Anti-Vignette Compliance (8 vignette violations)
+  • Baseline (Open-Book Optimal)    : 17/24 ( 70.8%) Anti-Vignette Compliance (7 vignette violations)
+  • Phase 37 SFT (Closed-Book)      : 24/24 (100.0%) Anti-Vignette Compliance (0 vignette violations)
+  • Phase 37 SFT (Open-Book Optimal): 24/24 (100.0%) Anti-Vignette Compliance (0 vignette violations)
+  • Overall SFT (48/48, 100.0%) vs Overall Baseline (33/48, 68.8%): Fisher's Exact p = 0.0000 (***)
+  • Open-Book SFT (24/24) vs Open-Book Baseline (17/24): Fisher's Exact p = 0.0094 (**)
+  • Closed-Book SFT (24/24) vs Closed-Book Baseline (16/24): Fisher's Exact p = 0.0039 (**)
+
+--- 7. SEQUENTIAL SESSION TERTILE PROGRESSION & TOPIC-REPETITION FATIGUE ---
+Session Block                     | n   | MS1 Audience %   | Bloom Tier 1 %   | Scope 3/3 %     | Default Profile % 
+--------------------------------------------------------------------------------------------------------------------
+Tertile 1: Early (Cards 1-32)     | 32  |  50.0% (16/32)   |  40.6% (13/32)   |  53.1% (17/32)  |   0.0% ( 0/32)
+Tertile 2: Middle (Cards 33-64)   | 32  |  59.4% (19/32)   |  53.1% (17/32)   |  37.5% (12/32)  |  15.6% ( 5/32)
+Tertile 3: Late (Cards 65-96)     | 32  |  87.5% (28/32)   |  84.4% (27/32)   |  65.6% (21/32)  |  62.5% (20/32)
+
+  >> Pipeline Distribution in Late Session Block (Tertile 3, Cards 65-96):
+    • Baseline (Closed-Book)          : 12/24 ( 50.0%) of cards landed in Cards 65-96 (Mean eval_id: 55.4)
+    • Baseline (Open-Book Optimal)    :  5/24 ( 20.8%) of cards landed in Cards 65-96 (Mean eval_id: 45.8)
+    • Phase 37 SFT (Closed-Book)      : 10/24 ( 41.7%) of cards landed in Cards 65-96 (Mean eval_id: 49.5)
+    • Phase 37 SFT (Open-Book Optimal):  5/24 ( 20.8%) of cards landed in Cards 65-96 (Mean eval_id: 43.3)
+
+  >> Cards Flagged by Evaluator for Topic Repetition Across Pipelines (n=6):
+    • Card 12 (p2_baseline_open   | Ovarian Cancer Staging  ): "Repetition"
+    • Card 13 (p4_sft_open        | LEEP vs Conization      ): "Repetition"
+    • Card 14 (p1_baseline_closed | Ovarian Serous Tumors   ): "Repetition"
+    • Card 15 (p3_sft_closed      | JGCA Classification     ): ". Repetition"
+    • Card 17 (p2_baseline_open   | LEEP vs Conization      ): "Does not add clinical / repetition / omit"
+    • Card 89 (p1_baseline_closed | Oral Submucous Fibrosis ): "Repeated question"
+
+==========================================================================================

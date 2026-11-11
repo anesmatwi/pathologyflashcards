@@ -1,0 +1,49 @@
+=========================================================
+   PHASE 37: FORMATTING & STRUCTURAL INTEGRITY AUDIT 
+=========================================================
+
+--- 1. OVERALL STRUCTURAL INTEGRITY (%) ---
+* Score based on strict adherence to [QUESTION]/[ANSWER] syntax and zero conversational filler.
+
+Baseline (Closed-Book)              :  48.1%
+Baseline (Open-Book Optimal)        :  49.3%
+Phase 37 SFT (Closed-Book)          :  99.9%
+Phase 37 SFT (Open-Book Optimal)    :  99.8%
+
+--- 2. GRANULAR VIOLATION BREAKDOWN (Lower is Better) ---
+[Baseline (Closed-Book)]
+  - Conversational Leaks (Filler)  :   3.9%
+  - Syntax Tag Failure (Missing)   : 100.0%
+
+[Baseline (Open-Book Optimal)]
+  - Conversational Leaks (Filler)  :   1.5%
+  - Syntax Tag Failure (Missing)   : 100.0%
+
+[Phase 37 SFT (Closed-Book)]
+  - Conversational Leaks (Filler)  :   0.1%
+  - Syntax Tag Failure (Missing)   :   0.0%
+
+[Phase 37 SFT (Open-Book Optimal)]
+  - Conversational Leaks (Filler)  :   0.3%
+  - Syntax Tag Failure (Missing)   :   0.1%
+
+--- 3. INTEGRITY BY COGNITIVE TIER ---
+>> TARGET TIER: FOUNDATIONAL
+  Baseline (Closed-Book)            :  49.6%
+  Baseline (Open-Book Optimal)      :  49.8%
+  Phase 37 SFT (Closed-Book)        : 100.0%
+  Phase 37 SFT (Open-Book Optimal)  : 100.0%
+
+>> TARGET TIER: INTERMEDIATE
+  Baseline (Closed-Book)            :  46.8%
+  Baseline (Open-Book Optimal)      :  48.6%
+  Phase 37 SFT (Closed-Book)        : 100.0%
+  Phase 37 SFT (Open-Book Optimal)  : 100.0%
+
+>> TARGET TIER: ADVANCED
+  Baseline (Closed-Book)            :  47.8%
+  Baseline (Open-Book Optimal)      :  49.4%
+  Phase 37 SFT (Closed-Book)        :  99.8%
+  Phase 37 SFT (Open-Book Optimal)  :  99.4%
+
+=========================================================

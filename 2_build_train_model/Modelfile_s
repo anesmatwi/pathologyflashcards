@@ -1,0 +1,13 @@
+FROM ./Qwen2.5-14B-Instruct.Q4_K_M.gguf
+# 2. Lock in the ChatML Structure
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+{{ .Response }}<|im_end|>"""
+# 3. Set strict factual sampling & stop tokens
+PARAMETER temperature 0.0
+PARAMETER num_ctx 2048
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"

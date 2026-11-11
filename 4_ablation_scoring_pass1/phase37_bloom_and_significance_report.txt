@@ -1,0 +1,83 @@
+=========================================================
+   CLINICALLY-MAPPED COGNITIVE COMPLEXITY & SIGNIFICANCE 
+=========================================================
+
+--- 1. RAW BLOOM SCORES (1-6) BY TIER ---
+>> TARGET TIER: FOUNDATIONAL
+Baseline (Closed-Book)              : 1.94 ± 0.06  (SD: 0.05)
+Baseline (Open-Book Optimal)        : 2.35 ± 0.11  (SD: 0.09)
+Phase 37 SFT (Closed-Book)          : 1.96 ± 0.05  (SD: 0.04)
+Phase 37 SFT (Open-Book Optimal)    : 1.97 ± 0.05  (SD: 0.04)
+
+>> TARGET TIER: INTERMEDIATE
+Baseline (Closed-Book)              : 4.29 ± 0.06  (SD: 0.05)
+Baseline (Open-Book Optimal)        : 4.48 ± 0.08  (SD: 0.06)
+Phase 37 SFT (Closed-Book)          : 3.33 ± 0.09  (SD: 0.07)
+Phase 37 SFT (Open-Book Optimal)    : 3.31 ± 0.11  (SD: 0.09)
+
+>> TARGET TIER: ADVANCED
+Baseline (Closed-Book)              : 5.25 ± 0.19  (SD: 0.16)
+Baseline (Open-Book Optimal)        : 4.74 ± 0.27  (SD: 0.22)
+Phase 37 SFT (Closed-Book)          : 5.77 ± 0.05  (SD: 0.04)
+Phase 37 SFT (Open-Book Optimal)    : 5.79 ± 0.06  (SD: 0.05)
+
+--- 2. COGNITIVE SEPARATION DELTAS (The 'Stair-Step' Spectrum) ---
+>> Δ (Intermediate - Foundational)
+Baseline (Closed-Book)              : 2.35 ± 0.10  (SD: 0.08)
+Baseline (Open-Book Optimal)        : 2.13 ± 0.08  (SD: 0.06)
+Phase 37 SFT (Closed-Book)          : 1.37 ± 0.12  (SD: 0.10)
+Phase 37 SFT (Open-Book Optimal)    : 1.34 ± 0.11  (SD: 0.09)
+
+>> Δ (Advanced - Intermediate)
+Baseline (Closed-Book)              : 0.96 ± 0.23  (SD: 0.19)
+Baseline (Open-Book Optimal)        : 0.26 ± 0.34  (SD: 0.27)
+Phase 37 SFT (Closed-Book)          : 2.44 ± 0.09  (SD: 0.07)
+Phase 37 SFT (Open-Book Optimal)    : 2.48 ± 0.08  (SD: 0.07)
+
+>> Δ TOTAL (Advanced - Foundational)
+Baseline (Closed-Book)              : 3.31 ± 0.17  (SD: 0.14)
+Baseline (Open-Book Optimal)        : 2.39 ± 0.35  (SD: 0.28)
+Phase 37 SFT (Closed-Book)          : 3.81 ± 0.09  (SD: 0.07)
+Phase 37 SFT (Open-Book Optimal)    : 3.82 ± 0.04  (SD: 0.03)
+
+=========================================================
+   STATISTICAL SIGNIFICANCE REPORT (WILCOXON P-VALUES) 
+=========================================================
+* Significance Levels: (*) p < 0.05 | (**) p < 0.01 | (***) p < 0.001 | (ns) Not Significant
+
+📊 COMPARISON: SFT (Closed) vs Baseline (Closed)
+---------------------------------------------------------
+  • Raw Cognitive Complexity (Bloom) : p = 0.0000 (***)
+  • Cognitive Calibration Error (BCE): p = 0.0000 (***)
+  • Cognitive Separation (Δ Bloom)   : p = 0.0000 (***)
+  • Factuality Accuracy              : p = 0.0589 (ns)
+  • Factual Density (Advanced Tier)  : p = 0.0000 (***)
+  • Tier Match Rate                  : p = 0.0000 (***)
+
+📊 COMPARISON: SFT (Open) vs Baseline (Open)
+---------------------------------------------------------
+  • Raw Cognitive Complexity (Bloom) : p = 0.0000 (***)
+  • Cognitive Calibration Error (BCE): p = 0.0000 (***)
+  • Cognitive Separation (Δ Bloom)   : p = 0.0000 (***)
+  • Factuality Accuracy              : p = 0.0716 (ns)
+  • Factual Density (Advanced Tier)  : p = 0.0000 (***)
+  • Tier Match Rate                  : p = 0.0000 (***)
+
+📊 COMPARISON: SFT (Open) vs SFT (Closed)
+---------------------------------------------------------
+  • Raw Cognitive Complexity (Bloom) : p = 0.9440 (ns)
+  • Cognitive Calibration Error (BCE): p = 0.8852 (ns)
+  • Cognitive Separation (Δ Bloom)   : p = 0.7533 (ns)
+  • Factuality Accuracy              : p = 0.9637 (ns)
+  • Factual Density (Advanced Tier)  : p = 0.0434 (*)
+  • Tier Match Rate                  : p = 0.1088 (ns)
+
+📊 COMPARISON: Baseline (Open) vs Baseline (Closed)
+---------------------------------------------------------
+  • Raw Cognitive Complexity (Bloom) : p = 0.4172 (ns)
+  • Cognitive Calibration Error (BCE): p = 0.0000 (***)
+  • Cognitive Separation (Δ Bloom)   : p = 0.0000 (***)
+  • Factuality Accuracy              : p = 0.0003 (***)
+  • Factual Density (Advanced Tier)  : p = 0.0829 (ns)
+  • Tier Match Rate                  : p = 0.0000 (***)
+

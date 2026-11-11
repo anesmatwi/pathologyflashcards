@@ -1,0 +1,24 @@
+=========================================================
+   LEXICAL COGNITIVE SEPARATION (TF-IDF JACCARD OVERLAP) 
+=========================================================
+* Lower % means BETTER separation (models are using distinct vocabulary per tier)
+* Higher % means POOR separation (models are just padding the same words)
+
+--- 1. Foundational vs Intermediate Overlap ---
+Baseline (Closed-Book)              : 10.24% ± 0.80%  (SD: 6.45%)
+Baseline (Open-Book Optimal)        : 17.06% ± 1.21%  (SD: 9.74%)
+Phase 37 SFT (Closed-Book)          :  5.43% ± 0.68%  (SD: 5.46%)
+Phase 37 SFT (Open-Book Optimal)    :  7.31% ± 0.98%  (SD: 7.85%)
+
+--- 2. Intermediate vs Advanced Overlap ---
+Baseline (Closed-Book)              : 14.34% ± 1.10%  (SD: 8.79%)
+Baseline (Open-Book Optimal)        : 23.87% ± 1.39%  (SD: 11.13%)
+Phase 37 SFT (Closed-Book)          :  6.58% ± 0.60%  (SD: 4.80%)
+Phase 37 SFT (Open-Book Optimal)    :  6.61% ± 0.61%  (SD: 4.93%)
+
+--- 3. Foundational vs Advanced Overlap (Total Shift) ---
+Baseline (Closed-Book)              : 10.92% ± 0.85%  (SD: 6.85%)
+Baseline (Open-Book Optimal)        : 19.10% ± 1.32%  (SD: 10.59%)
+Phase 37 SFT (Closed-Book)          :  6.09% ± 0.59%  (SD: 4.77%)
+Phase 37 SFT (Open-Book Optimal)    :  5.77% ± 0.56%  (SD: 4.49%)
+

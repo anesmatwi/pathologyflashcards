@@ -1,0 +1,33 @@
+=========================================================
+   PHASE 37: FINAL CALIBRATED DOK CLASSIFICATION (N=3000)
+=========================================================
+* Target Mapping: Foundational = Level 1 | Intermediate = Level 2 | Advanced = Level 3
+
+--- Baseline_Closed Confusion Matrix ---
+                     | Pred Lvl 1 | Pred Lvl 2 | Pred Lvl 3 |
+-----------------------------------------------------------
+ Target: Foundational |        194 |         53 |          3 | -> Match: 77.6%
+ Target: Intermediate |          4 |        214 |         32 | -> Match: 85.6%
+ Target: Advanced    |          5 |        131 |        114 | -> Match: 45.6%
+
+--- Baseline_Open Confusion Matrix ---
+                     | Pred Lvl 1 | Pred Lvl 2 | Pred Lvl 3 |
+-----------------------------------------------------------
+ Target: Foundational |         73 |        161 |         16 | -> Match: 29.2%
+ Target: Intermediate |          9 |        211 |         30 | -> Match: 84.4%
+ Target: Advanced    |         11 |        174 |         65 | -> Match: 26.0%
+
+--- SFT_Closed Confusion Matrix ---
+                     | Pred Lvl 1 | Pred Lvl 2 | Pred Lvl 3 |
+-----------------------------------------------------------
+ Target: Foundational |        209 |         37 |          4 | -> Match: 83.6%
+ Target: Intermediate |         15 |        217 |         18 | -> Match: 86.8%
+ Target: Advanced    |          0 |         22 |        228 | -> Match: 91.2%
+
+--- SFT_Open Confusion Matrix ---
+                     | Pred Lvl 1 | Pred Lvl 2 | Pred Lvl 3 |
+-----------------------------------------------------------
+ Target: Foundational |        198 |         47 |          5 | -> Match: 79.2%
+ Target: Intermediate |         21 |        212 |         17 | -> Match: 84.8%
+ Target: Advanced    |          0 |         30 |        220 | -> Match: 88.0%
+

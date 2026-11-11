@@ -1,0 +1,18 @@
+=========================================================
+   PHASE 37: DISTRACTOR RAG NOISE ADOPTION (N=300)
+=========================================================
+
+* Lower % means BETTER noise rejection.
+
+--- Baseline_Qwen ---
+  > Foundational :  69.0% Noise Adoption (69/100)
+  > Intermediate :  76.0% Noise Adoption (76/100)
+  > Advanced     :  61.0% Noise Adoption (61/100)
+  > OVERALL      :  68.7% Noise Adoption (206/300)
+
+--- Phase37_SFT ---
+  > Foundational :  16.0% Noise Adoption (16/100)
+  > Intermediate :  17.0% Noise Adoption (17/100)
+  > Advanced     :  12.0% Noise Adoption (12/100)
+  > OVERALL      :  15.0% Noise Adoption (45/300)
+

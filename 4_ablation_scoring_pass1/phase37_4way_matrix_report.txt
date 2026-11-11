@@ -1,0 +1,35 @@
+=========================================================
+   PHASE 37 (4-WAY) ABLATION MATRIX REPORT 
+=========================================================
+
+--- 1. FACTUALITY ACCURACY % (Weight of Accurate Claims) ---
+Baseline (Closed-Book)              :  89.41 ±  3.62  (SD:  2.91)%
+Baseline (Open-Book Optimal)        :  86.29 ±  2.45  (SD:  1.97)%
+Phase 37 SFT (Closed-Book)          :  89.02 ±  2.06  (SD:  1.66)%
+Phase 37 SFT (Open-Book Optimal)    :  89.25 ±  1.57  (SD:  1.27)%
+
+--- 2. CLINICAL FACTUAL DENSITY (Accurate Claims / 100 words) ---
+*Evaluated on the ADVANCED tier.*
+Baseline (Closed-Book)              :   1.92 ±  0.18  (SD:  0.14)
+Baseline (Open-Book Optimal)        :   1.80 ±  0.12  (SD:  0.09)
+Phase 37 SFT (Closed-Book)          :   2.27 ±  0.11  (SD:  0.09)
+Phase 37 SFT (Open-Book Optimal)    :   2.41 ±  0.29  (SD:  0.23)
+
+--- 3. ABSOLUTE CLAIM VOLUME (True Claims per Card) ---
+*Evaluated on the ADVANCED tier.*
+Baseline (Closed-Book)              :   7.02 ±  0.68  (SD:  0.54)
+Baseline (Open-Book Optimal)        :   5.91 ±  0.44  (SD:  0.35)
+Phase 37 SFT (Closed-Book)          :   7.65 ±  0.29  (SD:  0.24)
+Phase 37 SFT (Open-Book Optimal)    :   7.81 ±  0.80  (SD:  0.64)
+
+--- 4. TIER MATCH RATE % (Steerability) ---
+Baseline (Closed-Book)              :  80.53 ±  3.48  (SD:  2.80)%
+Baseline (Open-Book Optimal)        :  56.13 ±  8.27  (SD:  6.66)%
+Phase 37 SFT (Closed-Book)          :  99.47 ±  0.69  (SD:  0.56)%
+Phase 37 SFT (Open-Book Optimal)    :  98.67 ±  1.31  (SD:  1.05)%
+
+--- 5. LENGTH COMPLIANCE % (Strict Word Boundaries) ---
+Baseline (Closed-Book)              :  33.73 ±  0.94  (SD:  0.76)%
+Baseline (Open-Book Optimal)        :  33.20 ±  1.08  (SD:  0.87)%
+Phase 37 SFT (Closed-Book)          :  90.93 ±  2.08  (SD:  1.67)%
+Phase 37 SFT (Open-Book Optimal)    :  92.53 ±  2.95  (SD:  2.38)%

@@ -1,0 +1,12 @@
+--- Baseline_Qwen ---
+  > Foundational :  60.0% Adoption (12/20)
+  > Intermediate :  20.0% Adoption (4/20)
+  > Advanced     :  25.0% Adoption (5/20)
+  > OVERALL      :  35.0% Adoption (21/60)
+
+--- Phase37_SFT ---
+  > Foundational :  20.0% Adoption (4/20)
+  > Intermediate :  70.0% Adoption (14/20)
+  > Advanced     :  15.0% Adoption (3/20)
+  > OVERALL      :  35.0% Adoption (21/60)
+

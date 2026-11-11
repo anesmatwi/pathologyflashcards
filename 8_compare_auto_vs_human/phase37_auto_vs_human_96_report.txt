@@ -1,0 +1,102 @@
+=========================================================================================================
+   HEAD-TO-HEAD COMPARISON: AUTOMATED JUDGES vs. PATHOLOGIST ON THE EXACT SAME 96 CARDS (24 TOPICS)
+=========================================================================================================
+
+--- 1. PIPELINE COMPARISON ON THE IDENTICAL 96-CARD SAMPLE (n=24 per pipeline) ---
+Pipeline                         | Auto Pass1 Bloom | Auto Pass2 DOK  | Hum Bloom (Cls/All)  | Hum Aud (Cls/All)  | Hum Dual (Cls/All)
+--------------------------------------------------------------------------------------------------------------------------------------
+Baseline (Closed-Book)           |  91.7% (22/24)   |  83.3% (20/24)  |  47.8% [45.8%] (11/23) |  43.5% [45.8%]   |  39.1% [37.5%]
+Baseline (Open-Book Optimal)     |  75.0% (18/24)   |  62.5% (15/24)  |  25.0% [25.0%] ( 6/24) |  29.2% [29.2%]   |  12.5% [12.5%]
+Phase 37 SFT (Closed-Book)       | 100.0% (24/24)   |  95.8% (23/24)  |  30.0% [25.0%] ( 6/20) |  30.0% [25.0%]   |  25.0% [20.8%]
+Phase 37 SFT (Open-Book Optimal) | 100.0% (24/24)   |  95.8% (23/24)  |  50.0% [45.8%] (11/22) |  36.4% [37.5%]   |  31.8% [29.2%]
+
+--- 2. TIER-BY-TIER BREAKDOWN ON THE 96 CARDS (n=8 per pipeline per tier) ---
+
+>> TARGET TIER: FOUNDATIONAL (n=8 per pipeline)
+--------------------------------------------------------------------------------------------------------------------------------------
+Baseline (Closed-Book)           | 100.0% (8/8)     |  75.0% (6/8)    |  85.7% (6/7)         |  71.4% (5/7)       |  71.4% (5/7)      
+Baseline (Open-Book Optimal)     |  50.0% (4/8)     |  37.5% (3/8)    |  37.5% (3/8)         |  50.0% (4/8)       |  25.0% (2/8)      
+Phase 37 SFT (Closed-Book)       | 100.0% (8/8)     |  87.5% (7/8)    | 100.0% (5/5)         | 100.0% (5/5)       | 100.0% (5/5)      
+Phase 37 SFT (Open-Book Optimal) | 100.0% (8/8)     |  87.5% (7/8)    |  83.3% (5/6)         |  66.7% (4/6)       |  66.7% (4/6)      
+
+>> TARGET TIER: INTERMEDIATE (n=8 per pipeline)
+--------------------------------------------------------------------------------------------------------------------------------------
+Baseline (Closed-Book)           |  75.0% (6/8)     | 100.0% (8/8)    |  50.0% (4/8)         |  37.5% (3/8)       |  37.5% (3/8)      
+Baseline (Open-Book Optimal)     |  75.0% (6/8)     | 100.0% (8/8)    |  25.0% (2/8)         |  37.5% (3/8)       |  12.5% (1/8)      
+Phase 37 SFT (Closed-Book)       | 100.0% (8/8)     | 100.0% (8/8)    |  14.3% (1/7)         |   0.0% (0/7)       |   0.0% (0/7)      
+Phase 37 SFT (Open-Book Optimal) | 100.0% (8/8)     | 100.0% (8/8)    |  50.0% (4/8)         |  25.0% (2/8)       |  25.0% (2/8)      
+
+>> TARGET TIER: ADVANCED (n=8 per pipeline)
+--------------------------------------------------------------------------------------------------------------------------------------
+Baseline (Closed-Book)           | 100.0% (8/8)     |  75.0% (6/8)    |  12.5% (1/8)         |  25.0% (2/8)       |  12.5% (1/8)      
+Baseline (Open-Book Optimal)     | 100.0% (8/8)     |  50.0% (4/8)    |  12.5% (1/8)         |   0.0% (0/8)       |   0.0% (0/8)      
+Phase 37 SFT (Closed-Book)       | 100.0% (8/8)     | 100.0% (8/8)    |   0.0% (0/8)         |  12.5% (1/8)       |   0.0% (0/8)      
+Phase 37 SFT (Open-Book Optimal) | 100.0% (8/8)     | 100.0% (8/8)    |  25.0% (2/8)         |  25.0% (2/8)       |  12.5% (1/8)      
+
+--- 3. WHY CARDS THAT PASSED AUTOMATED PASS 2 (DOK/SOLO) DISAGREED WITH HUMAN STRICT MATCH ---
+
+[Phase 37 SFT (Open-Book Optimal)]
+  • Automated Pass 2 (DOK) Matched Target Tier : 23/24 (95.8%)
+  • Also Matched Human Strict Dual-Axis        : 6/23
+  • Disagreed on Human Strict Dual-Axis        : 17/23 cards — Breakdown of those 17 cards:
+      1. Human agreed on Bloom's Task, but rated Target Audience lower (e.g. MS1): 4
+      2. Human agreed on Target Audience, but rated Bloom's Task lower           : 1
+      3. Human marked Bloom's Task 'Unclassifiable' (ultra-brief list/repetition): 2
+      4. Human rated both Audience and Bloom's different from target tier        : 10
+      * Note: 8/17 (47.1%) of these discordant cards were still rated '3/3 Perfectly Scoped' by the pathologist.
+
+[Phase 37 SFT (Closed-Book)]
+  • Automated Pass 2 (DOK) Matched Target Tier : 23/24 (95.8%)
+  • Also Matched Human Strict Dual-Axis        : 4/23
+  • Disagreed on Human Strict Dual-Axis        : 19/23 cards — Breakdown of those 19 cards:
+      1. Human agreed on Bloom's Task, but rated Target Audience lower (e.g. MS1): 1
+      2. Human agreed on Target Audience, but rated Bloom's Task lower           : 1
+      3. Human marked Bloom's Task 'Unclassifiable' (ultra-brief list/repetition): 4
+      4. Human rated both Audience and Bloom's different from target tier        : 13
+      * Note: 8/19 (42.1%) of these discordant cards were still rated '3/3 Perfectly Scoped' by the pathologist.
+
+[Baseline (Open-Book Optimal)]
+  • Automated Pass 2 (DOK) Matched Target Tier : 15/24 (62.5%)
+  • Also Matched Human Strict Dual-Axis        : 2/15
+  • Disagreed on Human Strict Dual-Axis        : 13/15 cards — Breakdown of those 13 cards:
+      1. Human agreed on Bloom's Task, but rated Target Audience lower (e.g. MS1): 2
+      2. Human agreed on Target Audience, but rated Bloom's Task lower           : 2
+      3. Human marked Bloom's Task 'Unclassifiable' (ultra-brief list/repetition): 0
+      4. Human rated both Audience and Bloom's different from target tier        : 9
+      * Note: 6/13 (46.2%) of these discordant cards were still rated '3/3 Perfectly Scoped' by the pathologist.
+
+[Baseline (Closed-Book)]
+  • Automated Pass 2 (DOK) Matched Target Tier : 20/24 (83.3%)
+  • Also Matched Human Strict Dual-Axis        : 8/20
+  • Disagreed on Human Strict Dual-Axis        : 12/20 cards — Breakdown of those 12 cards:
+      1. Human agreed on Bloom's Task, but rated Target Audience lower (e.g. MS1): 2
+      2. Human agreed on Target Audience, but rated Bloom's Task lower           : 1
+      3. Human marked Bloom's Task 'Unclassifiable' (ultra-brief list/repetition): 0
+      4. Human rated both Audience and Bloom's different from target tier        : 9
+      * Note: 9/12 (75.0%) of these discordant cards were still rated '3/3 Perfectly Scoped' by the pathologist.
+
+--- 4. CARD-BY-CARD HEAD-TO-HEAD LEDGER FOR SFT OPEN-BOOK (p4_sft_open, n=24) ---
+  Card  4 | Tier: foundational ( 36w) | Topic: Calcium Oxalate Calcifications | AutoP1: L1(B=2) | AutoP2: DOK-1 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 2/3 | Fact: 4/5
+  Card 16 | Tier: foundational ( 16w) | Topic: Endocrine Tumor Variants     | AutoP1: L1(B=2) | AutoP2: DOK-1 | Human Aud: nan | Human Bloom: nan | Scope: 2/3 | Fact: 4/5
+  Card 19 | Tier: foundational ( 33w) | Topic: MEN2 Syndromes               | AutoP1: L1(B=2) | AutoP2: DOK-2 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 3/3 | Fact: 4/5
+  Card 36 | Tier: foundational (  6w) | Topic: Categories of Testing        | AutoP1: L1(B=1) | AutoP2: DOK-1 | Human Aud: 1.0 | Human Bloom: nan | Scope: 2/3 | Fact: 4/5
+  Card 60 | Tier: foundational ( 16w) | Topic: Methanol Poisoning           | AutoP1: L1(B=2) | AutoP2: DOK-1 | Human Aud: 2.0 | Human Bloom: 1.0 | Scope: 3/3 | Fact: 5/5
+  Card 62 | Tier: foundational ( 15w) | Topic: Pathologist Variability      | AutoP1: L1(B=2) | AutoP2: DOK-1 | Human Aud: 2.0 | Human Bloom: 2.0 | Scope: 2/3 | Fact: 3/5
+  Card 76 | Tier: foundational ( 16w) | Topic: Architectural Abnormalities  | AutoP1: L1(B=2) | AutoP2: DOK-1 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 3/3 | Fact: 5/5
+  Card 88 | Tier: foundational ( 37w) | Topic: ALP                          | AutoP1: L1(B=2) | AutoP2: DOK-1 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 3/3 | Fact: 5/5
+  Card 11 | Tier: intermediate ( 84w) | Topic: HPV-Positive SCC             | AutoP1: L2(B=3) | AutoP2: DOK-2 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 2/3 | Fact: 4/5
+  Card 13 | Tier: intermediate ( 65w) | Topic: LEEP vs Conization           | AutoP1: L2(B=3) | AutoP2: DOK-2 | Human Aud: 1.0 | Human Bloom: 2.0 | Scope: 2/3 | Fact: 4/5
+  Card 35 | Tier: intermediate ( 65w) | Topic: Keratin AE1/AE3              | AutoP1: L2(B=3) | AutoP2: DOK-2 | Human Aud: 1.0 | Human Bloom: 2.0 | Scope: 2/3 | Fact: 4/5
+  Card 56 | Tier: intermediate ( 65w) | Topic: Targetoid Urticarial Papules | AutoP1: L2(B=4) | AutoP2: DOK-2 | Human Aud: 2.0 | Human Bloom: 2.0 | Scope: 2/3 | Fact: 4/5
+  Card 57 | Tier: intermediate ( 75w) | Topic: Ovarian Cancer Staging       | AutoP1: L2(B=3) | AutoP2: DOK-2 | Human Aud: 2.0 | Human Bloom: 2.0 | Scope: 2/3 | Fact: 4/5
+  Card 64 | Tier: intermediate ( 77w) | Topic: Bernard-Soulier Syndrome     | AutoP1: L2(B=4) | AutoP2: DOK-2 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 2/3 | Fact: 4/5
+  Card 68 | Tier: intermediate ( 41w) | Topic: Ovarian Serous Tumors        | AutoP1: L2(B=3) | AutoP2: DOK-2 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 3/3 | Fact: 5/5
+  Card 92 | Tier: intermediate ( 66w) | Topic: JGCA Classification          | AutoP1: L2(B=3) | AutoP2: DOK-2 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 3/3 | Fact: 5/5
+  Card  2 | Tier: advanced     (238w) | Topic: Glomus Jugulare Tumors       | AutoP1: L3(B=6) | AutoP2: DOK-3 | Human Aud: 2.0 | Human Bloom: 2.0 | Scope: 2/3 | Fact: 5/5
+  Card  5 | Tier: advanced     (355w) | Topic: Single Marker Limitations    | AutoP1: L3(B=6) | AutoP2: DOK-3 | Human Aud: 2.0 | Human Bloom: 2.0 | Scope: 3/3 | Fact: 5/5
+  Card 22 | Tier: advanced     (385w) | Topic: Leucine Metabolism           | AutoP1: L3(B=6) | AutoP2: DOK-3 | Human Aud: 3.0 | Human Bloom: 1.0 | Scope: 3/3 | Fact: 4/5
+  Card 32 | Tier: advanced     (365w) | Topic: Pluripotency Markers         | AutoP1: L3(B=6) | AutoP2: DOK-3 | Human Aud: 1.0 | Human Bloom: 3.0 | Scope: 3/3 | Fact: 5/5
+  Card 42 | Tier: advanced     (307w) | Topic: Non-megaloblastic Anemia     | AutoP1: L3(B=5) | AutoP2: DOK-3 | Human Aud: 3.0 | Human Bloom: 3.0 | Scope: 3/3 | Fact: 5/5
+  Card 46 | Tier: advanced     (219w) | Topic: Oral Submucous Fibrosis      | AutoP1: L3(B=5) | AutoP2: DOK-3 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 3/3 | Fact: 5/5
+  Card 50 | Tier: advanced     (287w) | Topic: Endosomal Fusion             | AutoP1: L3(B=5) | AutoP2: DOK-3 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 3/3 | Fact: 5/5
+  Card 83 | Tier: advanced     (209w) | Topic: ERBB2 overexpression         | AutoP1: L3(B=6) | AutoP2: DOK-3 | Human Aud: 1.0 | Human Bloom: 1.0 | Scope: 2/3 | Fact: 5/5
