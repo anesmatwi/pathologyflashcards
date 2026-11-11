@@ -58,19 +58,66 @@ pathologyflashcards/
 └── 9_compare_auto_vs_human/                 # 9. CROSS-EVALUATION ANALYSIS
     └── 1_compare_auto_vs_human_96.py        # Reconciles Pass 1 & Pass 2 limits vs. specialist human grading
 ```
-🚀 Quick Start & InstallationPrerequisitesPython 3.10+NVIDIA GPU with $\ge$ 16GB VRAMCUDA Toolkit 12.1+Environment SetupBashgit clone [https://github.com/anesmatwi/pathologyflashcards.git](https://github.com/anesmatwi/pathologyflashcards.git)
+
+---
+
+## 🚀 Quick Start & Installation
+
+### Prerequisites
+* Python 3.10+
+* NVIDIA GPU with $\ge$ 16GB VRAM
+* CUDA Toolkit 12.1+
+
+### Environment Setup
+```bash
+git clone https://github.com/anesmatwi/pathologyflashcards.git
 cd pathologyflashcards
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-Running the Model Locally (Ollama)The fine-tuned model has been compiled into a 4-bit quantized GGUF format for highly efficient local inference.Install Ollama.Pull/load the model using the provided Modelfile:Bashcd 2_build_train_model
+```
+
+### Running the Model Locally (Ollama)
+The fine-tuned model has been compiled into a 4-bit quantized GGUF format for highly efficient local inference. 
+
+1. Install [Ollama](https://ollama.com/).
+2. Pull/load the model using the provided Modelfile:
+```bash
+cd 2_build_train_model
 ollama create pathology-tutor -f Modelfile_s
 ollama run pathology-tutor
-Example Inference Prompt:For the best results, use the exact lightweight two-sentence role prompt used during training. No explicit length boundaries or structural tag instructions are required at inference time."You are a Foundational Pathology Tutor for Year-1 medical students. Generate a highly concise flashcard for the following topic: Gastrointestinal Stromal Tumor."📦 Models and DataUpon formal publication in Artificial Intelligence in Medicine, the following assets will be available on HuggingFace:Base Dataset: Clinical seed vault (train_data.jsonl)SFT Dataset: 12,000-card length-balanced training set (phase37_1_sft_dataset.jsonl)Evaluation Sets: The N=3,000 generation results (phase37_4way_multiseed_results.jsonl) and N=96 human pilot set (dr_honeine_evaluations.jsonl)Model Weights: Fine-tuned Qwen2.5-14B rsLoRA adapters and standalone 4-bit GGUF.(Links will be updated upon manuscript acceptance).📄 CitationIf you use this code or dataset in your research, please cite our paper:Code snippet@article{atwi2026pathologyflashcards,
+```
+3. **Example Inference Prompt:** 
+*For the best results, use the exact lightweight two-sentence role prompt used during training. No explicit length boundaries or structural tag instructions are required at inference time.*
+> "You are a Foundational Pathology Tutor for Year-1 medical students. Generate a highly concise flashcard for the following topic: Gastrointestinal Stromal Tumor."
+
+---
+
+## 📦 Models and Data
+
+Upon formal publication in *Artificial Intelligence in Medicine*, the following assets will be available on HuggingFace:
+* **Base Dataset:** Clinical seed vault (`train_data.jsonl`)
+* **SFT Dataset:** 12,000-card length-balanced training set (`phase37_1_sft_dataset.jsonl`)
+* **Evaluation Sets:** The N=3,000 generation results (`phase37_4way_multiseed_results.jsonl`) and N=96 human pilot set (`dr_honeine_evaluations.jsonl`)
+* **Model Weights:** Fine-tuned `Qwen2.5-14B` rsLoRA adapters and standalone 4-bit GGUF.
+
+*(Links will be updated upon manuscript acceptance).*
+
+---
+
+## 📄 Citation
+
+If you use this code or dataset in your research, please cite our paper:
+
+```bibtex
+@article{atwi2026pathologyflashcards,
   title={Fine-Tuning a Compact 14B Large Language Model for Multi-Level, RAG-Resilient Pathology Flashcard Generation},
   author={Atwi, Mahmoud and Honeine, Fouad and Atat, Rachad},
   journal={Artificial Intelligence in Medicine},
   year={2026},
   publisher={Elsevier}
 }
-📜 LicenseThis project is licensed under the MIT License - see the LICENSE file for details. Note that any underlying medical texts or base model weights retain their original respective licenses.
+```
+
+## 📜 License
+This project is licensed under the MIT License - see the `LICENSE` file for details. Note that any underlying medical texts or base model weights retain their original respective licenses.
