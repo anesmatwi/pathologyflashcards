@@ -57,6 +57,7 @@ pathologyflashcards/
 │
 └── 9_compare_auto_vs_human/                 # 9. CROSS-EVALUATION ANALYSIS
     └── 1_compare_auto_vs_human_96.py        # Reconciles Pass 1 & Pass 2 limits vs. specialist human grading
+```
 🚀 Quick Start & InstallationPrerequisitesPython 3.10+NVIDIA GPU with $\ge$ 16GB VRAMCUDA Toolkit 12.1+Environment SetupBashgit clone [https://github.com/anesmatwi/pathologyflashcards.git](https://github.com/anesmatwi/pathologyflashcards.git)
 cd pathologyflashcards
 python -m venv venv
